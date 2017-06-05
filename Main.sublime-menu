@@ -17,7 +17,7 @@
                         [
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/FTPSync/AutoInputer.sublime-settings"},
+                                "args": {"file": "${packages}/auto-inputer-sublime-text.sublime-package/AutoInputer.sublime-settings"},
                                 "caption": "Settings – Default"
                             },
                             {
@@ -29,7 +29,7 @@
                             {
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/AutoInputer/Default (Windows).sublime-keymap",
+                                    "file": "${packages}/auto-inputer-sublime-text.sublime-package/Default (Windows).sublime-keymap",
                                     "platform": "Windows"
                                 },
                                 "caption": "Key Bindings – Default"
