@@ -12,7 +12,7 @@
                 "children":
                 [
                     {
-                        "caption": "Auto Inputer",
+                        "caption": "Auto Inputer 1",
                         "children":
                         [
                             {
@@ -20,12 +20,15 @@
                                 "args": {"file": "${packages}/auto-inputer-sublime-text.sublime-package/AutoInputer.sublime-settings"},
                                 "caption": "Settings – Default"
                             },
+                            
                             {
                                 "command": "open_file",
                                 "args": {"file": "${packages}/User/AutoInputer.sublime-settings"},
                                 "caption": "Settings – User"
                             },
+
                             { "caption": "-" },
+
                             {
                                 "command": "open_file",
                                 "args": {
