@@ -25,9 +25,3 @@ class AutoInputCommand(sublime_plugin.TextCommand):
 			settings.set("auto_indent", True)
 		Thread(target=th).start()
 
-
-class AutoInputCommand(sublime_plugin.TextCommand):
-	def run(self, edit, **args):
-		if args:
-			self.on_done(args["text"])
-			return
