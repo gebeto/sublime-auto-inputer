@@ -16,12 +16,11 @@ class AutoInputCommand(sublime_plugin.TextCommand):
 		win = self.view.window() 
 		settings = self.view.settings()
 		char_delay = sublime.load_settings('auto-inputer.sublime-settings').get("char_delay")
-		print(char_delay)
-		print(type(char_delay))
+		print("Char Delay: ", char_delay)
 		def th():
 			for char in text:
-				sleep(0.02)
+				sleep(char_delay)
 				win.run_command("insert",{"characters": char}) 
 			settings.set("auto_indent", True)
-		Thread(target=th).start()
+		Thread(target=th, args=(char_delay)).start()
 
