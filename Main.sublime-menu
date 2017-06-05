@@ -16,42 +16,16 @@
                         "children":
                         [
                             {
-                                "command": "open_file",
-                                "args": {"file": "${packages}/auto-inputer-sublime-text.sublime-package/AutoInputer.sublime-settings"},
+                                "command": "open_file", 
+                                "args": {"file": "${packages}/auto-inputer-sublime-text/auto-inputer.sublime-settings"},
                                 "caption": "Settings – Default"
                             },
                             {
-                                "command": "open_file",
-                                "args": {"file": "${packages}/User/AutoInputer.sublime-settings"},
+                                "command": "open_file", 
+                                "args": {"file": "${packages}/User/Preferences.sublime-settings"},
                                 "caption": "Settings – User"
                             },
-
-                            { "caption": "-" },
-
-                            {
-                                "command": "open_file",
-                                "args": {
-                                    "file": "${packages}/auto-inputer-sublime-text.sublime-package/Default (Windows).sublime-keymap",
-                                    "platform": "Windows"
-                                },
-                                "caption": "Key Bindings – Default"
-                            },
-                            {
-                                "command": "open_file",
-                                "args": {
-                                    "file": "${packages}/auto-inputer-sublime-text.sublime-package/Default (OSX).sublime-keymap",
-                                    "platform": "OSX"
-                                },
-                                "caption": "Key Bindings – Default"
-                            },
-                            {
-                                "command": "open_file",
-                                "args": {
-                                    "file": "${packages}/auto-inputer-sublime-text.sublime-package/Default (Linux).sublime-keymap",
-                                    "platform": "Linux"
-                                },
-                                "caption": "Key Bindings – Default"
-                            }
+                            { "caption": "-" }
                         ]
                     }
                 ]
