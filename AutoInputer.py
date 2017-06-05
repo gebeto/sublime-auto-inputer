@@ -15,7 +15,7 @@ class AutoInputCommand(sublime_plugin.TextCommand):
 	def on_done(self, text):
 		win = self.view.window() 
 		settings = self.view.settings()
-		char_delay = self.view.settings().get("char_delay")
+		char_delay = sublime.load_settings('auto-inputer.sublime-settings').get("char_delay")
 		print(char_delay)
 		print(type(char_delay))
 		def th():
@@ -26,3 +26,8 @@ class AutoInputCommand(sublime_plugin.TextCommand):
 		Thread(target=th).start()
 
 
+class AutoInputCommand(sublime_plugin.TextCommand):
+	def run(self, edit, **args):
+		if args:
+			self.on_done(args["text"])
+			return
