@@ -22,5 +22,5 @@ class AutoInputCommand(sublime_plugin.TextCommand):
 				sleep(char_delay)
 				win.run_command("insert",{"characters": char}) 
 			settings.set("auto_indent", True)
-		Thread(target=th, args=(char_delay)).start()
+		Thread(target=th, args=[char_delay]).start()
 
