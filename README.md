@@ -1,3 +1,4 @@
-# auto-inputer-sublime-text
+# Auto Inputer
 
-Autoinput text in sublime text
+Маленький плагин придназначен для автоматического, быстрого набора текста.
+Удобный для использования в обучающих виднороликах.

@@ -1,0 +1,10 @@
+[
+    {
+        "keys": ["ctrl+a+i"], "command": "auto_input"
+    },
+    {
+        "keys": ["ctrl+shift+a+1"], "command": "auto_input", "args": {
+        	"text": "Hello world!",
+        }
+    },
+]
