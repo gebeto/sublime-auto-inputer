@@ -17,7 +17,7 @@ class AutoInputCommand(sublime_plugin.TextCommand):
 		settings = self.view.settings()
 		char_delay = sublime.load_settings('auto-inputer.sublime-settings').get("char_delay")
 		print("Char Delay: ", char_delay)
-		def th():
+		def th(char_delay):
 			for char in text:
 				sleep(char_delay)
 				win.run_command("insert",{"characters": char}) 
