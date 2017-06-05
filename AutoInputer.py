@@ -15,6 +15,9 @@ class AutoInputCommand(sublime_plugin.TextCommand):
 	def on_done(self, text):
 		win = self.view.window() 
 		settings = self.view.settings()
+		char_delay = self.view.settings().get("char_delay")
+		print(char_delay)
+		print(type(char_delay))
 		def th():
 			for char in text:
 				sleep(0.02)
