@@ -15,7 +15,7 @@ class AutoInputCommand(sublime_plugin.TextCommand):
 	def on_done(self, text):
 		win = self.view.window() 
 		settings = self.view.settings()
-		char_delay = sublime.load_settings('auto-inputer.sublime-settings').get("char_delay")
+		char_delay = self.get_setting("char_delay")
 		print("Char Delay: ", char_delay)
 		def th(char_delay):
 			for char in text:
@@ -24,3 +24,9 @@ class AutoInputCommand(sublime_plugin.TextCommand):
 			settings.set("auto_indent", True)
 		Thread(target=th, args=[char_delay]).start()
 
+
+	def get_setting(self, string):
+        if self.view and self.view.settings().get(string):
+            return self.view.settings().get(string)
+        else:
+            return sublime.load_settings('auto-inputer.sublime-settings').get(string)
