@@ -26,9 +26,7 @@
                                 "caption": "Settings – User"
                             },
 
-
                             { "caption": "-" },
-
 
                             {
                                 "command": "open_file",
