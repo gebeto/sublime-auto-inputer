@@ -1,4 +1,5 @@
 {
-	// Access_token от VK ля доступа к api
-	"access_token": ""
+	"default": {
+		"char_delay": 0.03,
+	}
 }
