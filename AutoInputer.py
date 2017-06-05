@@ -26,7 +26,8 @@ class AutoInputCommand(sublime_plugin.TextCommand):
 
 
 	def get_setting(self, string):
-        if self.view and self.view.settings().get(string):
-            return self.view.settings().get(string)
-        else:
-            return sublime.load_settings('auto-inputer.sublime-settings').get(string)
+		if self.view and self.view.settings().get(string):
+			return self.view.settings().get(string)
+		else:
+			return sublime.load_settings('auto-inputer.sublime-settings').get(string)
+
