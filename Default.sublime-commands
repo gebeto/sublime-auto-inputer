@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "AutoInputer: Input some text",
+        "command": "auto_input"
+    }
+]

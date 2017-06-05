@@ -43,6 +43,14 @@
                                     "platform": "OSX"
                                 },
                                 "caption": "Key Bindings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/auto-inputer-sublime-text.sublime-package/Default (Linux).sublime-keymap",
+                                    "platform": "Linux"
+                                },
+                                "caption": "Key Bindings – Default"
                             }
                         ]
                     }

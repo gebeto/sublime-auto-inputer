@@ -1,5 +1,3 @@
 {
-	"default": {
-		"char_delay": 0.03,
-	}
+	"char_delay": 0.03,
 }
